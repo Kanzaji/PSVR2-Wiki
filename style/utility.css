@@ -1,0 +1,24 @@
+:root {
+    --text-color: black;
+    --text-selected: darkcyan;
+    --page-background: white;
+    --shadow-color: #00000050;
+}
+
+@media (prefers-color-scheme: dark) {
+    /* TODO: IMPLEMENT */
+    :root {
+        /* --text-color: white;
+        --text-selected: cyan;
+        --page-background: black;
+        --shadow-color: #ffffff50; */
+    }
+}
+
+
+.unselectable, .unselectable * {
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
